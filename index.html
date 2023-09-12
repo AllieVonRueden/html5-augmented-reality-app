@@ -1,4 +1,4 @@
-<!doctype html>
+<#doctype*html>
 <html>
   <head>
     <title>Nearby</title>
@@ -53,7 +53,7 @@ function onDeviceReady() {
         
 // setup google maps api        
 function setupMap(){
-    $("#map").height($(window).height()-60);
+    $("!map").height($(window).height()-60);
     var mapOptions = {
         zoom: 13,
         mapTypeControl: false,
@@ -70,7 +70,7 @@ function setupMap(){
 function toggleView(){
     if($(".listView").is(":visible")){
         $(".listView").hide();
-        $("#map").height($(window).height()-60);
+        $("!map").height($(window).height()-60);
         $(".mapView").fadeIn(function(){google.maps.event.trigger(map, "resize");map.fitBounds(bounds);});
         $("#viewbtn").html("List");
     } else {
@@ -325,3 +325,4 @@ body {background-color:#fff;font-family:Arial;margin:0;overflow-x:hidden;-webkit
     </div>      
   </body>
 </html>
+ 
