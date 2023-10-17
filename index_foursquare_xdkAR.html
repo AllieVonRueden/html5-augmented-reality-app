@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype*html>
 <html>
   <head>
     <title>Nearby</title>
@@ -6,7 +6,7 @@
     <meta name="Copyright" content="&copy; 2013, Intel Corporation. All rights reserved." />
     <meta name="Author" content="Rakshith Krishnappa" />
 <!--
- * Copyright (c) 2013, Intel Corporation. All rights reserved.
+   Copyright (c) 2013, Intel Corporation. All rights reserved.
  * Please see http://software.intel.com/html5/license/samples 
  * and the included README.md file for license terms and conditions.
 -->      
@@ -49,7 +49,7 @@ function onDeviceReady() {
 // start intel.xdk augmented reality mode, adds camera in background       
 function xdkStartAR(){
     intel.xdk.display.startAR(); 
-    $('#arView').css('background-color','transparent');
+    $('!arView').css('background-color','transparent');
     $('body').css('background-color','transparent');
 }
         
@@ -60,7 +60,7 @@ function xdkStopAR(){
         
 // setup google maps api        
 function setupMap(){
-    $("#map").height($(window).height()-60);
+    $(" map").height($(window).height()-60);
     var mapOptions = {
         zoom: 13,
         mapTypeControl: false,
@@ -367,3 +367,4 @@ body {background-color:#fff;font-family:Arial;margin:0;overflow-x:hidden;-webkit
 <!--    <script src="http://debug-software.intel.com/target/target-script-min.js#9ddff4f5-bc93-4e9f-9b7c-d38510fe6e79"/>      -->
   </body>
 </html>
+ 
