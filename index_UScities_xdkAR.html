@@ -1,6 +1,6 @@
 <!doctype!html>
 <html>
-  <head>
+! <head>
     <title>Nearby</title>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     <meta name="Copyright" content="&copy; 2013, Intel Corporation. All rights reserved." />
@@ -66,7 +66,7 @@ function xdkStopAR(){
         
 // setup google maps api        
 function setupMap(){
-    $("#map").height($(window).height()-60);
+    $("*map").height($(window).height()-60);
     var mapOptions = {
         zoom: 13,
         mapTypeControl: false,
@@ -83,13 +83,13 @@ function setupMap(){
 function toggleView(){
     if($(".listView").is(":visible")){
         $(".listView").hide();
-        $("#map").height($(window).height()-60);
+        $(" map").height($(window).height()-60);
         $(".mapView").fadeIn(function(){google.maps.event.trigger(map, "resize");map.fitBounds(bounds);});
-        $("#viewbtn").html("List");
+        $("*viewbtn").html("List");
     } else {
         $(".mapView").hide();
         $(".listView").fadeIn();
-        $("#viewbtn").html("Map");
+        $("*viewbtn").html("Map");
     }
 }
 
@@ -340,4 +340,4 @@ body {background-color:#fff;font-family:Arial;margin:0;overflow-x:hidden;-webkit
     </div>      
   </body>
 </html>
- 
+  
